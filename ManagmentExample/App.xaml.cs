@@ -16,7 +16,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using ManagmentExample.View;
 
-namespace ManagmentExample
+namespace ManagmentExample 
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
