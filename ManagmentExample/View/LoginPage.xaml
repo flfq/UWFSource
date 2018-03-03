@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="ManagmentExample.View.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ManagmentExample.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+     
+    <Grid Name="rootGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <TextBlock Name="tbLogin" Text="Sign In" FontSize="20"  TextAlignment="Center" Margin="0,40,0,0" />
+            <TextBlock Name="tbWelcome" Text="Welcome to my App" FontSize="15" TextAlignment="Center" Margin="0,30,0,0"/>
+            <TextBlock Name="tbInputUserName" Text="Please input User and Password" FontSize="15" Margin="10,40,0,0" />
+            <TextBox Name="txtUserName" Margin="10,10,10,0"/>
+            <TextBox Name="txtPassword" Margin="10,20,10,0"/>
+          <Button Name="btnSubmit" Content="Login" Margin="10,20,0,0" HorizontalAlignment="Center" Click="BtnSubmit_OnClick" ></Button>
+        </StackPanel>
+    </Grid>
+</Page>
